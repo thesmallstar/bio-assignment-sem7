@@ -1,36 +1,24 @@
-from typing import List
 from Bio import SeqIO
+import os
 
 inp_file = "../data/input.fasta"
 
 
 def get_inp_seqs(input_file):
-    fasta_sequences = SeqIO.parse(open(input_file), 'fasta')
+    fasta_sequences = SeqIO.parse(open(os.path.abspath(input_file)), 'fasta')
     sequences = []
     for fasta in fasta_sequences:
         sequences.append(str(fasta.seq))
     return sequences
 
 
-def get_reverse_complement(inp_seq):
-    rev_seq = inp_seq[::-1]
-    rev_comp_seq = ''
-    comp_nuc = {
-        "A": "T",
-        "T": "A",
-        "G": "C",
-        "C": "G"
-    }
-    for nucleotide in rev_seq:
-        rev_comp_seq = rev_comp_seq + comp_nuc[nucleotide]
-    return rev_comp_seq
-
-
 def main():
-    inp_seqs: List[str] = get_inp_seqs(inp_file)
-    print("The reversed complement of the sequences are:")
+    inp_seqs = get_inp_seqs(inp_file)
     for inp_seq in inp_seqs:
-        print(get_reverse_complement(inp_seq))
+        print()
+        print("For Gene", inp_seq)
+        print("The length of the gene:", len(inp_seq), "nucleotides")
+        print("The number of pitches in the gene:", len(inp_seq)/10)
 
 
 if __name__ == "__main__":
