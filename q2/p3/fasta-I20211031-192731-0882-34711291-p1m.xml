@@ -1,0 +1,1133 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="fasta36" version="FASTA 36.3.8h May, 2020"/>
+  <commandLine command="cat fasta-I20211031-192731-0882-34711291-p1m.sequence | singularity exec $APPBIN/singularity/fasta:36.3.8h /fasta/bin/fasta36 -l $DATA_CURRENT/fastacfg/fasta3db -L -T 32  -p -s BL50 -f -10 -g -2 -E &quot;10.0 -1.0&quot;  -F 0.0 -b 50 -d 50 -m &quot;F9B fasta-I20211031-192731-0882-34711291-p1m.m9&quot; -m &quot;F10 fasta-I20211031-192731-0882-34711291-p1m.m10&quot; -z 1 \@:1- +uniprotkb_swissprot+ 2"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="21"/>
+   </sequences>
+   <databases total="1" sequences="565254" letters="203850821">
+    <database number="1" name="uniprotkb_swissprot" type="PROTEIN"/>
+   </databases>
+   <alignments>50</alignments>
+   <databaseRange>START-END</databaseRange>
+   <expectationLower>0.0</expectationLower>
+   <expectationUpper>10.0</expectationUpper>
+   <filter>none</filter>
+   <gapExtension>-2.0</gapExtension>
+   <gapOpen>-10.0</gapOpen>
+   <histogram>false</histogram>
+   <ktup>2</ktup>
+   <matrix>BL50</matrix>
+   <scores>50</scores>
+   <statistics>1</statistics>
+   <strand>none</strand>
+  </parameters>
+  <timeInfo start="2021-10-31T19:27:31+00:00" end="2021-10-31T19:27:33+00:00" search="P0Y0M0DT0H0M2.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="SP" id="INS_PHYMC" ac="P67974" length="51" description="Insulin OS=Physeter macrocephalus OX=9755 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>299.2</zScore>
+      <bits>57.0</bits>
+      <expectation>4.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="31" end="51">FVNQHLCGSHLVEALYLVCGERGFFYTPKAGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="SP" id="INS_BALPH" ac="P67973" length="51" description="Insulin OS=Balaenoptera physalus OX=9770 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>299.2</zScore>
+      <bits>57.0</bits>
+      <expectation>4.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="31" end="51">FVNQHLCGSHLVEALYLVCGERGFFYTPKAGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="SP" id="INS_PIG" ac="P01315" length="108" description="Insulin OS=Sus scrofa OX=9823 GN=INS PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>297.5</zScore>
+      <bits>57.8</bits>
+      <expectation>5.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="88" end="108">AENPQAGAVELGGGLGGLQALALEGPPQKRGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="SP" id="INS_CANLF" ac="P01321" length="110" description="Insulin OS=Canis lupus familiaris OX=9615 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>297.4</zScore>
+      <bits>57.8</bits>
+      <expectation>5.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">DLQVRDVELAGAPGEGGLQPLALEGALQKRGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="SP" id="INS_PONPY" ac="Q8HXV2" length="110" description="Insulin OS=Pongo pygmaeus OX=9600 GN=INS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>297.4</zScore>
+      <bits>57.8</bits>
+      <expectation>5.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">DLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="SP" id="INS_CHLAE" ac="P30407" length="110" description="Insulin OS=Chlorocebus aethiops OX=9534 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>297.4</zScore>
+      <bits>57.8</bits>
+      <expectation>5.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">DPQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="SP" id="INS_GORGO" ac="Q6YK33" length="110" description="Insulin OS=Gorilla gorilla gorilla OX=9595 GN=INS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>297.4</zScore>
+      <bits>57.8</bits>
+      <expectation>5.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">DLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="SP" id="INS_MACFA" ac="P30406" length="110" description="Insulin OS=Macaca fascicularis OX=9541 GN=INS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>297.4</zScore>
+      <bits>57.8</bits>
+      <expectation>5.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">DPQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="SP" id="INS_RABIT" ac="P01311" length="110" description="Insulin OS=Oryctolagus cuniculus OX=9986 GN=INS PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>297.4</zScore>
+      <bits>57.8</bits>
+      <expectation>5.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">ELQVGQAELGGGPGAGGLQPSALELALQKRGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="SP" id="INS_ICTTR" ac="Q91XI3" length="110" description="Insulin OS=Ictidomys tridecemlineatus OX=43179 GN=INS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>297.4</zScore>
+      <bits>57.8</bits>
+      <expectation>5.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">EQQGGQVELGGGPGAGLPQPLALEMALQKRGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="SP" id="INS_HUMAN" ac="P01308" length="110" description="Insulin OS=Homo sapiens OX=9606 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>297.4</zScore>
+      <bits>57.8</bits>
+      <expectation>5.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">DLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="SP" id="INS_PANTR" ac="P30410" length="110" description="Insulin OS=Pan troglodytes OX=9598 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <smithWatermanScore>156</smithWatermanScore>
+      <initn>156</initn>
+      <init1>156</init1>
+      <opt>156</opt>
+      <zScore>297.4</zScore>
+      <bits>57.8</bits>
+      <expectation>5.2e-09</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">DLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="SP" id="INS_ACOCA" ac="P01324" length="51" description="Insulin OS=Acomys cahirinus OX=10068 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <smithWatermanScore>152</smithWatermanScore>
+      <initn>152</initn>
+      <init1>152</init1>
+      <opt>152</opt>
+      <zScore>291.8</zScore>
+      <bits>55.6</bits>
+      <expectation>1.1e-08</expectation>
+      <identity>95.2</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::.:::::::::::::::::</pattern>
+      <matchSeq start="31" end="51">FVBQHLCGSHLVEALYLVCGERGFFYTPKSGIVDQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="SP" id="INS1_MOUSE" ac="P01325" length="108" description="Insulin-1 OS=Mus musculus OX=10090 GN=Ins1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <smithWatermanScore>152</smithWatermanScore>
+      <initn>152</initn>
+      <init1>152</init1>
+      <opt>152</opt>
+      <zScore>290.1</zScore>
+      <bits>56.4</bits>
+      <expectation>1.3e-08</expectation>
+      <identity>95.2</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::.:::::::::::::::::</pattern>
+      <matchSeq start="88" end="108">VEDPQVEQLELGGSPGDLQTLALEVARQKRGIVDQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="SP" id="INS1_RAT" ac="P01322" length="110" description="Insulin-1 OS=Rattus norvegicus OX=10116 GN=Ins1 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <smithWatermanScore>152</smithWatermanScore>
+      <initn>152</initn>
+      <init1>152</init1>
+      <opt>152</opt>
+      <zScore>290.0</zScore>
+      <bits>56.4</bits>
+      <expectation>1.4e-08</expectation>
+      <identity>95.2</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::.:::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">DPQVPQLELGGGPEAGDLQTLALEVARQKRGIVDQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="SP" id="INS2_MOUSE" ac="P01326" length="110" description="Insulin-2 OS=Mus musculus OX=10090 GN=Ins2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <smithWatermanScore>152</smithWatermanScore>
+      <initn>152</initn>
+      <init1>152</init1>
+      <opt>152</opt>
+      <zScore>290.0</zScore>
+      <bits>56.4</bits>
+      <expectation>1.4e-08</expectation>
+      <identity>95.2</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::.:::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">DPQVAQLELGGGPGAGDLQTLALEVAQQKRGIVDQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="SP" id="INS_CRILO" ac="P01313" length="110" description="Insulin OS=Cricetulus longicaudatus OX=10030 GN=INS PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <smithWatermanScore>152</smithWatermanScore>
+      <initn>152</initn>
+      <init1>152</init1>
+      <opt>152</opt>
+      <zScore>290.0</zScore>
+      <bits>56.4</bits>
+      <expectation>1.4e-08</expectation>
+      <identity>95.2</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::.:::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">DPQVAQLELGGGPGADDLQTLALEVAQQKRGIVDQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="SP" id="INS2_RAT" ac="P01323" length="110" description="Insulin-2 OS=Rattus norvegicus OX=10116 GN=Ins2 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <smithWatermanScore>152</smithWatermanScore>
+      <initn>152</initn>
+      <init1>152</init1>
+      <opt>152</opt>
+      <zScore>290.0</zScore>
+      <bits>56.4</bits>
+      <expectation>1.4e-08</expectation>
+      <identity>95.2</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::.:::::::::::::::::</pattern>
+      <matchSeq start="90" end="110">DPQVAQLELGGGPGAGDLQTLALEVARQKRGIVDQCCTSICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="SP" id="INS_HORSE" ac="P01310" length="86" description="Insulin OS=Equus caballus OX=9796 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <smithWatermanScore>151</smithWatermanScore>
+      <initn>151</initn>
+      <init1>151</init1>
+      <opt>151</opt>
+      <zScore>288.7</zScore>
+      <bits>55.8</bits>
+      <expectation>1.6e-08</expectation>
+      <identity>95.2</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::::.::::::::::::</pattern>
+      <matchSeq start="66" end="86">DPQVGEVELGGGPGLGGLQPLALAGPQQXXGIVEQCCTGICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="SP" id="INS_PSAOB" ac="Q62587" length="110" description="Insulin OS=Psammomys obesus OX=48139 GN=INS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <smithWatermanScore>151</smithWatermanScore>
+      <initn>151</initn>
+      <init1>151</init1>
+      <opt>151</opt>
+      <zScore>288.2</zScore>
+      <bits>56.1</bits>
+      <expectation>1.7e-08</expectation>
+      <identity>95.2</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::::.::::::::::::</pattern>
+      <matchSeq start="90" end="110">DPQMPQLELGGSPGAGDLRALALEVARQKRGIVEQCCTGICSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="SP" id="INS_CAMDR" ac="P01320" length="51" description="Insulin OS=Camelus dromedarius OX=9838 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <smithWatermanScore>150</smithWatermanScore>
+      <initn>150</initn>
+      <init1>150</init1>
+      <opt>150</opt>
+      <zScore>288.1</zScore>
+      <bits>55.0</bits>
+      <expectation>1.7e-08</expectation>
+      <identity>90.5</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::.:.:::::::::::</pattern>
+      <matchSeq start="31" end="51">FANQHLCGSHLVEALYLVCGERGFFYTPKAGIVEQCCASVCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="SP" id="INS_ELEMA" ac="P01316" length="51" description="Insulin OS=Elephas maximus OX=9783 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <smithWatermanScore>150</smithWatermanScore>
+      <initn>150</initn>
+      <init1>150</init1>
+      <opt>150</opt>
+      <zScore>288.1</zScore>
+      <bits>55.0</bits>
+      <expectation>1.7e-08</expectation>
+      <identity>90.5</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::::..:::::::::::</pattern>
+      <matchSeq start="31" end="51">FVNQHLCGSHLVEALYLVCGERGFFYTPKTGIVEQCCTGVCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="SP" id="INS_BOVIN" ac="P01317" length="105" description="Insulin OS=Bos taurus OX=9913 GN=INS PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <smithWatermanScore>150</smithWatermanScore>
+      <initn>150</initn>
+      <init1>150</init1>
+      <opt>150</opt>
+      <zScore>286.4</zScore>
+      <bits>55.7</bits>
+      <expectation>2.2e-08</expectation>
+      <identity>90.5</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::.:.:::::::::::</pattern>
+      <matchSeq start="85" end="105">RREVEGPQVGALELAGGPGAGGLEGPPQKRGIVEQCCASVCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="SP" id="INS_CHICH" ac="P01327" length="86" description="Insulin OS=Chinchilla chinchilla OX=10152 GN=INS PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <smithWatermanScore>149</smithWatermanScore>
+      <initn>149</initn>
+      <init1>149</init1>
+      <opt>149</opt>
+      <zScore>285.0</zScore>
+      <bits>55.1</bits>
+      <expectation>2.6e-08</expectation>
+      <identity>90.5</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::.:::::::.:::::::::</pattern>
+      <matchSeq start="66" end="86">DPQVGQADPGVVPEAGRLQPLALEMTLQXXGIVDQCCTSICTLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="SP" id="INS_SAISC" ac="P67971" length="51" description="Insulin OS=Saimiri sciureus OX=9521 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <smithWatermanScore>147</smithWatermanScore>
+      <initn>147</initn>
+      <init1>147</init1>
+      <opt>147</opt>
+      <zScore>282.5</zScore>
+      <bits>53.9</bits>
+      <expectation>3.5e-08</expectation>
+      <identity>85.7</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :.:.::::::::::::.::::</pattern>
+      <matchSeq start="31" end="51">FVNQHLCGPHLVEALYLVCGERGFFYAPKTGVVDQCCTSICSLYQLQNYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="SP" id="INS_AOTTR" ac="P67972" length="108" description="Insulin OS=Aotus trivirgatus OX=9505 GN=INS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <smithWatermanScore>147</smithWatermanScore>
+      <initn>147</initn>
+      <init1>147</init1>
+      <opt>147</opt>
+      <zScore>280.8</zScore>
+      <bits>54.7</bits>
+      <expectation>4.4e-08</expectation>
+      <identity>85.7</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :.:.::::::::::::.::::</pattern>
+      <matchSeq start="88" end="108">AEDLQVGQVELGGGSITGSLPPLEGPMQKRGVVDQCCTSICSLYQLQNYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="SP" id="INS_CAPHI" ac="P01319" length="51" description="Insulin OS=Capra hircus OX=9925 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <smithWatermanScore>145</smithWatermanScore>
+      <initn>145</initn>
+      <init1>145</init1>
+      <opt>145</opt>
+      <zScore>278.8</zScore>
+      <bits>53.2</bits>
+      <expectation>5.7e-08</expectation>
+      <identity>85.7</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::...:::::::::::</pattern>
+      <matchSeq start="31" end="51">FVNQHLCGSHLVEALYLVCGERGFFYTPKAGIVEQCCAGVCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="SP" id="INS_BALBO" ac="P01314" length="51" description="Insulin OS=Balaenoptera borealis OX=9768 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <smithWatermanScore>145</smithWatermanScore>
+      <initn>145</initn>
+      <init1>145</init1>
+      <opt>145</opt>
+      <zScore>278.8</zScore>
+      <bits>53.2</bits>
+      <expectation>5.7e-08</expectation>
+      <identity>90.5</identity>
+      <positives>95.2</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::.: :::::::::::</pattern>
+      <matchSeq start="31" end="51">FVNQHLCGSHLVEALYLVCGERGFFYTPKAGIVEQCCASTCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="SP" id="INS_SHEEP" ac="P01318" length="105" description="Insulin OS=Ovis aries OX=9940 GN=INS PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>145</score>
+      <smithWatermanScore>145</smithWatermanScore>
+      <initn>145</initn>
+      <init1>145</init1>
+      <opt>145</opt>
+      <zScore>277.1</zScore>
+      <bits>54.0</bits>
+      <expectation>7.1e-08</expectation>
+      <identity>85.7</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::...:::::::::::</pattern>
+      <matchSeq start="85" end="105">RREVEGPQVGALELAGGPGAGGLEGPPQKRGIVEQCCAGVCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="SP" id="INS_DIDVI" ac="P18109" length="51" description="Insulin OS=Didelphis virginiana OX=9267 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <smithWatermanScore>144</smithWatermanScore>
+      <initn>144</initn>
+      <init1>144</init1>
+      <opt>144</opt>
+      <zScore>277.0</zScore>
+      <bits>52.9</bits>
+      <expectation>7.2e-08</expectation>
+      <identity>90.5</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::.:::::::::.:::</pattern>
+      <matchSeq start="31" end="51">LVNQHLCGSHLVEALYLVCGERGFFYTPKAGIVEQCCNSICSLYQLETYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="SP" id="INS_FELCA" ac="P06306" length="110" description="Insulin OS=Felis catus OX=9685 GN=INS PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>144</score>
+      <smithWatermanScore>144</smithWatermanScore>
+      <initn>144</initn>
+      <init1>144</init1>
+      <opt>144</opt>
+      <zScore>275.2</zScore>
+      <bits>53.7</bits>
+      <expectation>9.1e-08</expectation>
+      <identity>85.7</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::::::.:.:::::::.:::</pattern>
+      <matchSeq start="90" end="110">DLQGKDAELGEAPGAGGLQPSALEAPLQKRGIVEQCCASVCSLYQLEHYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="SP" id="INS_HYSCR" ac="P01328" length="51" description="Insulin OS=Hystrix cristata OX=10137 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>142</score>
+      <smithWatermanScore>142</smithWatermanScore>
+      <initn>142</initn>
+      <init1>142</init1>
+      <opt>142</opt>
+      <zScore>273.3</zScore>
+      <bits>52.2</bits>
+      <expectation>1.2e-07</expectation>
+      <identity>81.0</identity>
+      <positives>100.0</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              :::.::::..::::::.::::</pattern>
+      <matchSeq start="31" end="51">FVNQHLCGSHLVEALYLVCGNDGFFYRPKAGIVDQCCTGVCSLYQLQNYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="SP" id="INS_CROAT" ac="P01334" length="51" description="Insulin OS=Crotalus atrox OX=8730 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>140</score>
+      <smithWatermanScore>140</smithWatermanScore>
+      <initn>140</initn>
+      <init1>140</init1>
+      <opt>140</opt>
+      <zScore>269.5</zScore>
+      <bits>51.5</bits>
+      <expectation>1.9e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . :::::::::::</pattern>
+      <matchSeq start="31" end="51">APNQRLCGSHLVEALFLICGERGFYYSPRSGIVEQCCENTCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="SP" id="INS_TRADO" ac="P69047" length="51" description="Insulin OS=Trachemys dorbigni OX=31137 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <smithWatermanScore>139</smithWatermanScore>
+      <initn>139</initn>
+      <init1>139</init1>
+      <opt>139</opt>
+      <zScore>267.7</zScore>
+      <bits>51.2</bits>
+      <expectation>2.4e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . :::::::::::</pattern>
+      <matchSeq start="31" end="51">AANQHLCGSHLVEALYLVCGERGFFYSPKAGIVEQCCHNTCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="SP" id="INS_TRASC" ac="P69048" length="51" description="Insulin OS=Trachemys scripta OX=34903 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <smithWatermanScore>139</smithWatermanScore>
+      <initn>139</initn>
+      <init1>139</init1>
+      <opt>139</opt>
+      <zScore>267.7</zScore>
+      <bits>51.2</bits>
+      <expectation>2.4e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . :::::::::::</pattern>
+      <matchSeq start="31" end="51">AANQHLCGSHLVEALYLVCGERGFFYSPKAGIVEQCCHNTCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="SP" id="INS_MELGA" ac="P67968" length="51" description="Insulin OS=Meleagris gallopavo OX=9103 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <smithWatermanScore>139</smithWatermanScore>
+      <initn>139</initn>
+      <init1>139</init1>
+      <opt>139</opt>
+      <zScore>267.7</zScore>
+      <bits>51.2</bits>
+      <expectation>2.4e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . :::::::::::</pattern>
+      <matchSeq start="31" end="51">AANQHLCGSHLVEALYLVCGERGFFYSPKAGIVEQCCHNTCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="SP" id="INS_STRCA" ac="P67969" length="51" description="Insulin OS=Struthio camelus OX=8801 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <smithWatermanScore>139</smithWatermanScore>
+      <initn>139</initn>
+      <init1>139</init1>
+      <opt>139</opt>
+      <zScore>267.7</zScore>
+      <bits>51.2</bits>
+      <expectation>2.4e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . :::::::::::</pattern>
+      <matchSeq start="31" end="51">AANQHLCGSHLVEALYLVCGERGFFYSPKAGIVEQCCHNTCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="SP" id="INS_ALLMI" ac="P12703" length="51" description="Insulin OS=Alligator mississippiensis OX=8496 GN=INS PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <smithWatermanScore>139</smithWatermanScore>
+      <initn>139</initn>
+      <init1>139</init1>
+      <opt>139</opt>
+      <zScore>267.7</zScore>
+      <bits>51.2</bits>
+      <expectation>2.4e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . :::::::::::</pattern>
+      <matchSeq start="31" end="51">AANQRLCGSHLVDALYLVCGERGFFYSPKGGIVEQCCHNTCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="SP" id="INS_SELRF" ac="P51463" length="103" description="Insulin (Fragment) OS=Selasphorus rufus OX=29060 GN=INS PE=3 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <smithWatermanScore>139</smithWatermanScore>
+      <initn>139</initn>
+      <init1>139</init1>
+      <opt>139</opt>
+      <zScore>266.1</zScore>
+      <bits>51.9</bits>
+      <expectation>2.9e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . :::::::::::</pattern>
+      <matchSeq start="83" end="103">DAEHPLVNGPLHGEVGDLPFQQEEFEKVKRGIVEQCCHNTCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="SP" id="INS2_XENLA" ac="P12707" length="106" description="Insulin-2 OS=Xenopus laevis OX=8355 GN=ins-b PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <smithWatermanScore>139</smithWatermanScore>
+      <initn>139</initn>
+      <init1>139</init1>
+      <opt>139</opt>
+      <zScore>266.0</zScore>
+      <bits>51.9</bits>
+      <expectation>3e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: : :::.:::::::</pattern>
+      <matchSeq start="86" end="106">DIEQAQVNGPQDNELDGMQFQPQEYQKMKRGIVEQCCHSTCSLFQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="SP" id="INS_CHICK" ac="P67970" length="107" description="Insulin OS=Gallus gallus OX=9031 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>139</score>
+      <smithWatermanScore>139</smithWatermanScore>
+      <initn>139</initn>
+      <init1>139</init1>
+      <opt>139</opt>
+      <zScore>266.0</zScore>
+      <bits>51.9</bits>
+      <expectation>3e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . :::::::::::</pattern>
+      <matchSeq start="87" end="107">DVEQPLVSSPLRGEAGVLPFQQEEYEKVKRGIVEQCCHNTCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="SP" id="INS_CAIMO" ac="P68243" length="51" description="Insulin OS=Cairina moschata OX=8855 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <smithWatermanScore>138</smithWatermanScore>
+      <initn>138</initn>
+      <init1>138</init1>
+      <opt>138</opt>
+      <zScore>265.8</zScore>
+      <bits>50.8</bits>
+      <expectation>3e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . :::::::::::</pattern>
+      <matchSeq start="31" end="51">AANQHLCGSHLVEALYLVCGERGFFYSPKTGIVEQCCENPCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="SP" id="INS_ANSAN" ac="P68245" length="51" description="Insulin OS=Anser anser anser OX=8844 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <smithWatermanScore>138</smithWatermanScore>
+      <initn>138</initn>
+      <init1>138</init1>
+      <opt>138</opt>
+      <zScore>265.8</zScore>
+      <bits>50.8</bits>
+      <expectation>3e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . :::::::::::</pattern>
+      <matchSeq start="31" end="51">AANQHLCGSHLVEALYLVCGERGFFYSPKTGIVEQCCENPCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="SP" id="INS_ANAPL" ac="P01333" length="81" description="Insulin OS=Anas platyrhynchos OX=8839 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>138</score>
+      <smithWatermanScore>138</smithWatermanScore>
+      <initn>138</initn>
+      <init1>138</init1>
+      <opt>138</opt>
+      <zScore>264.8</zScore>
+      <bits>51.3</bits>
+      <expectation>3.5e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . :::::::::::</pattern>
+      <matchSeq start="61" end="81">XXDVEQPLVNGPLHGEVGELPFQHEEYQXXGIVEQCCENPCSLYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="SP" id="INS_ORNAN" ac="Q9TQY7" length="51" description="Insulin OS=Ornithorhynchus anatinus OX=9258 GN=INS PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>137</score>
+      <smithWatermanScore>137</smithWatermanScore>
+      <initn>137</initn>
+      <init1>137</init1>
+      <opt>137</opt>
+      <zScore>264.0</zScore>
+      <bits>50.5</bits>
+      <expectation>3.8e-07</expectation>
+      <identity>76.2</identity>
+      <positives>95.2</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::.:: ..::.::::::::</pattern>
+      <matchSeq start="31" end="51">FPNQHLCGSHLVEALYLVCGEKGFYYIPRMGIVEECCKGVCSMYQLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="SP" id="INS_PTYDH" ac="P12708" length="51" description="Insulin OS=Ptyas dhumnades OX=8587 GN=INS PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>135</score>
+      <smithWatermanScore>135</smithWatermanScore>
+      <initn>135</initn>
+      <init1>135</init1>
+      <opt>135</opt>
+      <zScore>260.3</zScore>
+      <bits>49.8</bits>
+      <expectation>6.2e-07</expectation>
+      <identity>81.0</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: . ::::.::::::</pattern>
+      <matchSeq start="31" end="51">APNQRLCGSHLVEALFLICGERGFYYSPRTGIVEQCCENTCSLYELENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="SP" id="INS_ACIGU" ac="P81423" length="52" description="Insulin OS=Acipenser gueldenstaedtii OX=7902 GN=ins PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <smithWatermanScore>134</smithWatermanScore>
+      <initn>134</initn>
+      <init1>134</init1>
+      <opt>134</opt>
+      <zScore>258.4</zScore>
+      <bits>49.5</bits>
+      <expectation>7.9e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: : ::::.::::::</pattern>
+      <matchSeq start="32" end="52">ANQHLCGSHLVEALYLVCGERGFFYTPNKVGIVEQCCHSPCSLYDLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="SP" id="INS2_HUSDA" ac="C0HJI8" length="52" description="Insulin-2 OS=Huso dauricus OX=55293 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <smithWatermanScore>134</smithWatermanScore>
+      <initn>134</initn>
+      <init1>134</init1>
+      <opt>134</opt>
+      <zScore>258.4</zScore>
+      <bits>49.5</bits>
+      <expectation>7.9e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: : ::::.::::::</pattern>
+      <matchSeq start="32" end="52">ANQHLCGAHLVEALYLVCGERGFFYTPNKVGIVEQCCHSPCSLYDLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="SP" id="INS1_HUSDA" ac="C0HJI7" length="58" description="Insulin-1 OS=Huso dauricus OX=55293 PE=1 SV=1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>134</score>
+      <smithWatermanScore>134</smithWatermanScore>
+      <initn>134</initn>
+      <init1>134</init1>
+      <opt>134</opt>
+      <zScore>258.1</zScore>
+      <bits>49.6</bits>
+      <expectation>8.1e-07</expectation>
+      <identity>85.7</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: : ::::.::::::</pattern>
+      <matchSeq start="38" end="58">NQHLWCGAHLVEALYLVCGERGFFYTPNKVGIVEQCCHSPCSLYDLENYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="SP" id="INS1_XENLA" ac="P12706" length="106" description="Insulin-1 OS=Xenopus laevis OX=8355 GN=ins-a PE=1 SV=2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>133</score>
+      <smithWatermanScore>133</smithWatermanScore>
+      <initn>133</initn>
+      <init1>133</init1>
+      <opt>133</opt>
+      <zScore>254.9</zScore>
+      <bits>49.9</bits>
+      <expectation>1.2e-06</expectation>
+      <identity>81.0</identity>
+      <positives>90.5</positives>
+      <overlap>21</overlap>
+      <strand>none/none</strand>
+      <frame>f/f</frame>
+      <querySeq start="1" end="21">------------------------------GIVEQCCTSICSLYQLENYCN</querySeq>
+      <pattern>                              ::::::: : :::.:::.:::</pattern>
+      <matchSeq start="86" end="106">DMEQALVSGPQDNELDGMQLQPQEYQKMKRGIVEQCCHSTCSLFQLESYCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>
