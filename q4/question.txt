@@ -1,0 +1,14 @@
+Assignment 4
+
+Problem1: Download gene sequence of β-amylase gene of human from NCBI and find out GC content
+(the fraction of letters that are a C or a G) to classify the genome into high-GC regions (on average 60%
+G or C) and Low-GC regions (on average 60% A or T). Write a program to find out following
+
+1. Calculates the mean length of High-GC and Low-GC regions, and plots a histogram of the
+lengths of the High-GC and Low-GC regions.
+2. Find out the length of the gene and number of pitches
+3. Find out the ‘reverse’ complementary sequence
+
+Problem 2: Write a program to find out the percentage of polar amino acid present in a protein sequence.
+Also find out the position of the each of the polar amino acids (consider N-terminal amino acid is the first
+amino acid in the protein sequence).

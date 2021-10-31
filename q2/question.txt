@@ -1,0 +1,17 @@
+Assignment 2
+
+Problem1: Download DNA sequence of insulin gene of human, rat and cow from NCBI and find out GC
+content (the fraction of letters that are a C or a G) to classify the genome into high-GC regions (on
+average 60% G or C) and Low-GC regions (on average 60% A or T). Write a program to find out
+following
+
+1. Calculates the mean length of High-GC and Low-GC regions, and plots a histogram of the
+lengths of the High-GC and Low-GC regions.
+2. Calculate number of H-bonds for each organism
+3. Find out the number of ‘GAAT’ sequence repeats in case of above gene for human
+
+Problem 2: Given a DNA sequence (sense strand), write a program to find out Complementary sequence,
+Corresponding mRNA sequence and Protein sequence.
+
+Problem 3: Retrieve the secondary structure of a protein from Protein Data Bank (PDB) database of
+insulin gene of human. Also, perform sequence alignment using FASTA tool.
