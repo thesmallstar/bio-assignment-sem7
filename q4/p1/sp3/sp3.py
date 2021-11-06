@@ -30,7 +30,9 @@ def main():
     inp_seqs: List[str] = get_inp_seqs(inp_file)
     print("The reversed complement of the sequences are:")
     for inp_seq in inp_seqs:
+        print("----------------------------------------------")
         print(get_reverse_complement(inp_seq))
+        print("----------------------------------------------")
 
 
 if __name__ == "__main__":
