@@ -47,6 +47,7 @@ def processFile(fileName):
 
         plt.bar(list(range(0, len(gc_count_percent_store)*200, 200)),
                 gc_count_percent_store, color=region_type, width=200, align="edge")
+
         colors = {
             "high_gc_region": high_gc_colour,
             "low_gc_region": low_gc_colour,
@@ -55,13 +56,16 @@ def processFile(fileName):
         labels = list(colors.keys())
         handles = [plt.Rectangle((0, 0), 1, 1, color=colors[label])
                    for label in labels]
+
         plt.legend(handles, labels)
+
         ax = plt.gca()
         ax.set_ylim([0, 100])
         ax.set_xlabel("Neucleotide Region range")
         ax.set_ylabel("GC Content(%)")
+
         print(gc_count_percent_store)
-       # ax.set_xlim([0, len(sequence)])
+
         plt.show()
         print(list(range(0, len(gc_count_percent_store)*200, 200)))
 
