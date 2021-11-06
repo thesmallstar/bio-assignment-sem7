@@ -28,9 +28,9 @@ def processFile(fileName):
                 if(sequence[j]=='G' or sequence[j]=='C'):
                     gc_count+=1
             region_type.append(gc_count)
-        fig, axs = plt.subplots(1, 1,tight_layout=True)
+        print(region_type)
 
-        axs.hist(np.array(region_type), bins=len(sequence)//200)
+        plt.bar(list(range(1, len(sequence)//200)), region_type, width=0.4)
         plt.show()
 
 
