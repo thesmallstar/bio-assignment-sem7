@@ -25,7 +25,7 @@ def processFile(fileName):
     for sequence in sequences:
         gc_count_percent_store = []
 
-        # blue if gc_count>=60% and orange if at_count>=60% else grey
+        # blue if gc_count>=60% and orange if at_count>=60% else green
         region_type = []
         high_gc_colour = "royalblue"
         low_gc_colour = "red"
@@ -44,6 +44,8 @@ def processFile(fileName):
                 region_type.append(low_gc_colour)
             else:
                 region_type.append(mid_gc_colour)
+
+        print(gc_count_percent_store)
 
         plt.bar(list(range(0, len(gc_count_percent_store)*200, 200)),
                 gc_count_percent_store, color=region_type, width=200, align="edge")
@@ -64,10 +66,7 @@ def processFile(fileName):
         ax.set_xlabel("Neucleotide Region range")
         ax.set_ylabel("GC Content(%)")
 
-        print(gc_count_percent_store)
-
         plt.show()
-        print(list(range(0, len(gc_count_percent_store)*200, 200)))
 
 
 files = [f for f in listdir(dataPath) if isfile(join(dataPath, f))]

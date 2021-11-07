@@ -12,3 +12,5 @@ lengths of the High-GC and Low-GC regions.
 Problem 2: Write a program to find out the percentage of polar amino acid present in a protein sequence.
 Also find out the position of the each of the polar amino acids (consider N-terminal amino acid is the first
 amino acid in the protein sequence).
+
+Problem 3: Perform multiple sequence alignment on three or more sequences.

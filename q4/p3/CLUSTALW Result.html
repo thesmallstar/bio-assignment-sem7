@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0053)https://www.genome.jp/tools-bin/clustalw#clustalw.aln -->
+<html lang="en-US"><div id="twoseven-scripts" data-info="Scripts added by TwoSeven extension" style="display: none !important; position: static !important; top: 0px !important; left: 0px !important; width: 0px !important; height: 0px !important;"><script type="text/javascript" id="__tmpScript-917724844" data-added-by-two-seven="1">(function() {
+        window.twoseven = {};
+      })();</script><script type="text/javascript" id="__tmpScript-944782457" data-added-by-two-seven="1">(function() {
+        window.twoseven.waitForDOMNode = async function t(e,t=document){e=e||{};const{type:n,value:o}=e;if(!n||!o)throw new Error("Must specify identifier");let s=o;switch(n){case"tag":s=o.toUpperCase()}if("check"!==n){const e=await i({type:"selector",value:s},[],t);if(e)return new Promise(t=>t(e))}async function i({type:e,value:t},n,o){let s;switch(e){case"tag":s=n.find(e=>e.tagName===t);break;case"selector":s=o.querySelector(t);break;case"check":for(const e of n){if(await t(e))return e}}return s}return new Promise((e,o)=>{const a=new MutationObserver(async o=>{for(const r of o)if("childList"===r.type){const o=Array.from(r.addedNodes),w=await i({type:n,value:s},o,t);if(w)return a.disconnect(),e(w)}});a.observe(t,{childList:!0,subtree:!0})})};
+      })();</script><script type="text/javascript" id="__tmpScript-930772657" data-added-by-two-seven="1">(function() {
+        
+    window.twoseven.reportError = function n(e,t,n){"string"==typeof(n=n||{})&&(n={message:n});const{message:o,stack:s}=t;Object.assign(n,{tag:e,error:{message:o,stack:s}}),window.tsExtGetPostToParent()({name:name,tag:e,action:"report-error",json:n}),console.error(JSON.stringify(n.error))}
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-632009237" data-added-by-two-seven="1">(function() {
+        
+    window.twosevenHmsToSecondsOnly = function(str) {
+        var p = str.split(':'),
+            s = 0, m = 1;
+
+        while (p.length > 0) {
+            s += m * parseInt(p.pop(), 10);
+            m *= 60;
+        }
+
+        return s;
+    }
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-164658474" data-added-by-two-seven="1">(function() {
+        window.twosevenExtLog = function(e,o,c){o||(o=e,e=void 0);let n=c||"black";if(c)switch(c){case"success":n="Green";break;case"info":n="DodgerBlue";break;case"error":n="Red";break;case"warning":n="Orange";break;default:n=c}e?console.log("%c"+e+": "+o,`color:${n}`):console.log("%c"+o,`color:${n}`)};
+      })();</script><script type="text/javascript" id="__tmpScript-920681402" data-added-by-two-seven="1">(function() {
+        
+    document.twosevenGET = function(url, callback) {
+      var xmlhttp = new XMLHttpRequest();
+
+      xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+          if (xmlhttp.status == 200) {
+            callback(null, xmlhttp.responseText);
+          } else {
+            callback('something else other than 200 was returned', '');
+          }
+        }
+      };
+      xmlhttp.open("GET", url, true);
+      xmlhttp.send();
+    };
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-24629089" data-added-by-two-seven="1">(function() {
+        
+    window.triggerEvent = function(e,t,n,o=!1){let s;o?(n&&"string"!=typeof n&&(n=JSON.stringify(n)),s=n):s={data:n},window.twosevenScriptsDiv&&n&&"object"==typeof n&&(console.warn(`WARNING: Attempting to send an object via event.detail from CS->Page does not work on Firefox: ${JSON.stringify(n)}`),console.error((new Error).stack));var i=new CustomEvent(t,{bubbles:!0,composed:!0,detail:s});e.dispatchEvent(i)}
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-608968789" data-added-by-two-seven="1">(function() {
+        window.twoseven.postTo = async function o(e,t,n=!1){let o;return t.name=t.name||name,o=n?new Promise(e=>{const n=`ack-${t.action}-${1e9*Math.random()|0}`;t.ack={event:n};window.debug&&["play","pause","currentTime"].some(e=>t.action.includes(e)),window.addEventListener("message",function t({data:o={}}){o.action===n&&(window.removeEventListener("message",t),e(o.json))})}):new Promise(e=>e()),e.postMessage(t,"*"),o};
+      })();</script><script type="text/javascript" id="__tmpScript-326069451" data-added-by-two-seven="1">(function() {
+        window.tsExtGetPostTo = function s(){return window.twoseven&&window.twoseven.postTo||window.postTo};
+      })();</script><script type="text/javascript" id="__tmpScript-7241819" data-added-by-two-seven="1">(function() {
+        window.tsExtGetPostToParent = function i(){return window.twoseven&&window.twoseven.postToParent||window.postToParent};
+      })();</script><script type="text/javascript" id="__tmpScript-917516317" data-added-by-two-seven="1">(function() {
+        window.twoseven.postResponse = async function a(e,t){const{source:n,data:{ack:{event:o}}}=e;window.tsExtGetPostTo()(n,{action:o,json:t})};
+      })();</script><script type="text/javascript" id="__tmpScript-32216773" data-added-by-two-seven="1">(function() {
+        window.twoseven.postToParent = async function r(e,t=!1){return window.tsExtGetPostTo()(window.parent,e,t)};
+      })();</script><script type="text/javascript" id="__tmpScript-635095626" data-added-by-two-seven="1">(function() {
+        window.twoseven.postToTop = async function w(e,t=!1){return window.tsExtGetPostTo()(window.top,e,t)};
+      })();</script><script type="text/javascript" id="__tmpScript-244879314" data-added-by-two-seven="1">(function() {
+        
+    window.twoseven.getFromStorage = e=>new Promise((t,n)=>{const o="get-from-storage-"+(1e9*Math.random()|0);window.addEventListener(o,e=>{window.removeEventListener(o,this);const{detail:{data:{value:n}}}=e;t(n)}),triggerEvent(window,"get-from-storage",{key:e,evt:o})})
+    window.twoseven.saveToStorage = e=>{triggerEvent(window,"save-to-storage",e)}
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-288199643" data-added-by-two-seven="1">(function() {
+        
+    window.attachHistoryListeners = function d(){var e=history.pushState;history.pushState=function(t,n,o){return"function"==typeof history.onpushstate&&history.onpushstate({state:t}),triggerEvent(window,"pushstate",{uri:o}),e.apply(history,arguments)};var t=history.replaceState;history.replaceState=function(e){return"function"==typeof history.onreplacestate&&history.onreplacestate({state:e}),t.apply(history,arguments)}}
+    window.attachHistoryListeners()
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-110564639" data-added-by-two-seven="1">(function() {
+        window.twoseven.once = function c(e,t,n){e.addEventListener(t,function o(s){e.removeEventListener(t,o),n(s)})};
+      })();</script><script type="text/javascript" id="__tmpScript-909154741" data-added-by-two-seven="1">(function() {
+        
+    window.twoseven.isOnTwoSevenTab = async () => {
+      const result = await window.twoseven.postTo(window, { action: 'is-on-twoseven-tab' }, true)
+      return result
+    }
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-699726376" data-added-by-two-seven="1">(function() {
+        
+    window.twoseven.isPaused = async () => {
+      const result = await window.twoseven.postTo(window, { action: 'twoseven:pause-state' }, true)
+      return result
+    }
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-173543038" data-added-by-two-seven="1">(function() {
+        window.twoseven = {};
+      })();</script><script type="text/javascript" id="__tmpScript-933496935" data-added-by-two-seven="1">(function() {
+        window.twoseven.waitForDOMNode = async function t(e,t=document){e=e||{};const{type:n,value:o}=e;if(!n||!o)throw new Error("Must specify identifier");let s=o;switch(n){case"tag":s=o.toUpperCase()}if("check"!==n){const e=await i({type:"selector",value:s},[],t);if(e)return new Promise(t=>t(e))}async function i({type:e,value:t},n,o){let s;switch(e){case"tag":s=n.find(e=>e.tagName===t);break;case"selector":s=o.querySelector(t);break;case"check":for(const e of n){if(await t(e))return e}}return s}return new Promise((e,o)=>{const a=new MutationObserver(async o=>{for(const r of o)if("childList"===r.type){const o=Array.from(r.addedNodes),w=await i({type:n,value:s},o,t);if(w)return a.disconnect(),e(w)}});a.observe(t,{childList:!0,subtree:!0})})};
+      })();</script><script type="text/javascript" id="__tmpScript-365886523" data-added-by-two-seven="1">(function() {
+        
+    window.twoseven.reportError = function n(e,t,n){"string"==typeof(n=n||{})&&(n={message:n});const{message:o,stack:s}=t;Object.assign(n,{tag:e,error:{message:o,stack:s}}),window.tsExtGetPostToParent()({name:name,tag:e,action:"report-error",json:n}),console.error(JSON.stringify(n.error))}
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-199834883" data-added-by-two-seven="1">(function() {
+        
+    window.twosevenHmsToSecondsOnly = function(str) {
+        var p = str.split(':'),
+            s = 0, m = 1;
+
+        while (p.length > 0) {
+            s += m * parseInt(p.pop(), 10);
+            m *= 60;
+        }
+
+        return s;
+    }
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-750006876" data-added-by-two-seven="1">(function() {
+        window.twosevenExtLog = function(e,o,c){o||(o=e,e=void 0);let n=c||"black";if(c)switch(c){case"success":n="Green";break;case"info":n="DodgerBlue";break;case"error":n="Red";break;case"warning":n="Orange";break;default:n=c}e?console.log("%c"+e+": "+o,`color:${n}`):console.log("%c"+o,`color:${n}`)};
+      })();</script><script type="text/javascript" id="__tmpScript-56348918" data-added-by-two-seven="1">(function() {
+        
+    document.twosevenGET = function(url, callback) {
+      var xmlhttp = new XMLHttpRequest();
+
+      xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
+          if (xmlhttp.status == 200) {
+            callback(null, xmlhttp.responseText);
+          } else {
+            callback('something else other than 200 was returned', '');
+          }
+        }
+      };
+      xmlhttp.open("GET", url, true);
+      xmlhttp.send();
+    };
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-265497154" data-added-by-two-seven="1">(function() {
+        
+    window.triggerEvent = function(e,t,n,o=!1){let s;o?(n&&"string"!=typeof n&&(n=JSON.stringify(n)),s=n):s={data:n},window.twosevenScriptsDiv&&n&&"object"==typeof n&&(console.warn(`WARNING: Attempting to send an object via event.detail from CS->Page does not work on Firefox: ${JSON.stringify(n)}`),console.error((new Error).stack));var i=new CustomEvent(t,{bubbles:!0,composed:!0,detail:s});e.dispatchEvent(i)}
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-478794361" data-added-by-two-seven="1">(function() {
+        window.twoseven.postTo = async function o(e,t,n=!1){let o;return t.name=t.name||name,o=n?new Promise(e=>{const n=`ack-${t.action}-${1e9*Math.random()|0}`;t.ack={event:n};window.debug&&["play","pause","currentTime"].some(e=>t.action.includes(e)),window.addEventListener("message",function t({data:o={}}){o.action===n&&(window.removeEventListener("message",t),e(o.json))})}):new Promise(e=>e()),e.postMessage(t,"*"),o};
+      })();</script><script type="text/javascript" id="__tmpScript-822579374" data-added-by-two-seven="1">(function() {
+        window.tsExtGetPostTo = function s(){return window.twoseven&&window.twoseven.postTo||window.postTo};
+      })();</script><script type="text/javascript" id="__tmpScript-496135334" data-added-by-two-seven="1">(function() {
+        window.tsExtGetPostToParent = function i(){return window.twoseven&&window.twoseven.postToParent||window.postToParent};
+      })();</script><script type="text/javascript" id="__tmpScript-835799392" data-added-by-two-seven="1">(function() {
+        window.twoseven.postResponse = async function a(e,t){const{source:n,data:{ack:{event:o}}}=e;window.tsExtGetPostTo()(n,{action:o,json:t})};
+      })();</script><script type="text/javascript" id="__tmpScript-518477461" data-added-by-two-seven="1">(function() {
+        window.twoseven.postToParent = async function r(e,t=!1){return window.tsExtGetPostTo()(window.parent,e,t)};
+      })();</script><script type="text/javascript" id="__tmpScript-147014791" data-added-by-two-seven="1">(function() {
+        window.twoseven.postToTop = async function w(e,t=!1){return window.tsExtGetPostTo()(window.top,e,t)};
+      })();</script><script type="text/javascript" id="__tmpScript-825984054" data-added-by-two-seven="1">(function() {
+        
+    window.twoseven.getFromStorage = e=>new Promise((t,n)=>{const o="get-from-storage-"+(1e9*Math.random()|0);window.addEventListener(o,e=>{window.removeEventListener(o,this);const{detail:{data:{value:n}}}=e;t(n)}),triggerEvent(window,"get-from-storage",{key:e,evt:o})})
+    window.twoseven.saveToStorage = e=>{triggerEvent(window,"save-to-storage",e)}
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-442521158" data-added-by-two-seven="1">(function() {
+        
+    window.attachHistoryListeners = function d(){var e=history.pushState;history.pushState=function(t,n,o){return"function"==typeof history.onpushstate&&history.onpushstate({state:t}),triggerEvent(window,"pushstate",{uri:o}),e.apply(history,arguments)};var t=history.replaceState;history.replaceState=function(e){return"function"==typeof history.onreplacestate&&history.onreplacestate({state:e}),t.apply(history,arguments)}}
+    window.attachHistoryListeners()
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-856653389" data-added-by-two-seven="1">(function() {
+        window.twoseven.once = function c(e,t,n){e.addEventListener(t,function o(s){e.removeEventListener(t,o),n(s)})};
+      })();</script><script type="text/javascript" id="__tmpScript-927351627" data-added-by-two-seven="1">(function() {
+        
+    window.twoseven.isOnTwoSevenTab = async () => {
+      const result = await window.twoseven.postTo(window, { action: 'is-on-twoseven-tab' }, true)
+      return result
+    }
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-262501055" data-added-by-two-seven="1">(function() {
+        
+    window.twoseven.isPaused = async () => {
+      const result = await window.twoseven.postTo(window, { action: 'twoseven:pause-state' }, true)
+      return result
+    }
+  ;
+      })();</script><script type="text/javascript" id="__tmpScript-409025046" data-added-by-two-seven="1">(function() {
+        
+      const modal = document.querySelector('.twoseven-ext-tab-media-modal')
+      const modalCloseBtn = modal.querySelector('.close')
+      function closeModal () {
+        modal.style.display = 'none'
+        const frame = document.querySelector('#twoseven-ext-tab-media-iframe').contentWindow
+        frame.postMessage({
+          __evt_name: 'modal-hide'
+        }, '*')
+      }
+      modalCloseBtn.onclick = closeModal
+
+      window.onmessage = function (e) {
+        if (e.data.__evt_name === 'modal-hide') {
+          closeModal()
+        }
+      }
+
+      window.twoseven.closeTabMediaModal = closeModal
+
+      window.onclick = function (e) {
+        if (e.target.id === 'twoseven-ext-tab-media-modal' && modal.style.display === 'block') {
+            closeModal()
+        }
+      }
+    ;
+      })();</script></div><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>CLUSTALW Result</title>
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link rel="stylesheet" href="./CLUSTALW Result_files/gn2.css" type="text/css">
+<style>pre{font-family:monospace}</style>
+<script type="text/javascript">
+<!--
+function ActSelect(F,PID){
+  var ss = F.actlist.selectedIndex;
+  var ff = F.actlist[ss].value;
+  F.target = "_blank";
+  if( ff == "deflt" ){
+    return false;
+  }
+  else if( ff == "tree_nj"      || 
+           ff == "tree_upgma"   || 
+           ff == "treebl_nj"    || 
+           ff == "treebl_upgma" ||
+           ff == "unroot_nj"    ||
+           ff == "unrootbl_nj"  ||
+           ff == "unroot_upgma" ){
+    F.action = "/tools-bin/clustalwtree?" + ff + "+" + PID;
+    return true;
+  }else{
+    return false;
+  }
+}
+//-->
+</script>
+<link href="chrome-extension://cjdnfmjmdligcpfcekfmenlhiopehjkd/web_resources/modal/modal.css" rel="stylesheet" id="__tmpStyle"></head><body data-new-gr-c-s-check-loaded="14.1038.0" data-gr-ext-installed=""><h2 class="title2"><a href="https://www.genome.jp/tools/clustalw/">CLUSTALW Result</a></h2>[<a href="https://www.genome.jp/tools-bin/clustalw#clustalw.aln">clustalw.aln</a>][<a href="https://www.genome.jp/tools-bin/clustalw#clustalw.dnd">clustalw.dnd</a>][<a href="https://www.genome.jp/tools/clustalw/clustalw_readme.html">readme</a>]<form name="tree" method="post" target="_blank" action="https://www.genome.jp/tools-bin/ete">
+<select name="treebuilder">
+<option value="bionj_default">BIONJ</option>
+<option value="fasttree_default" selected="">Select tree menu</option>
+<option value="fasttree_default">FastTree</option>
+<option value="fasttree_full">FastTree full</option>
+<option value="phyml_default">PhyML</option>
+<option value="phyml_default_bootstrap">PhyML bootstrap</option>
+<option value="raxml_default">RAxML</option>
+<option value="raxml_default_bootstrap">RAxML bootstrap</option>
+</select>
+<input type="hidden" name="ckids" value="on">
+<input type="hidden" name="prog" value="clustalw">
+<input type="hidden" name="type" value="dna">
+<input type="hidden" name="rnd" value="211108013638ZUJtP">
+<input type="hidden" name="ext" value="aln">
+<input type="submit" name="Act" value="Exec">
+</form>
+<hr><pre>
+
+
+ CLUSTAL 2.1 Multiple Sequence Alignments
+
+
+Sequence type explicitly set to DNA
+Sequence format is Pearson
+Sequence 1: ENA|BAA20512|BAA20512.1   432 bp
+Sequence 2: ENA|CAA23748|CAA23748.1   429 bp
+Sequence 3: ENA|CAA24095|CAA24095.1   429 bp
+Sequence 4: ENA|CAA28435|CAA28435.1   429 bp
+Start of Pairwise alignments
+Aligning...
+
+
+
+Sequences (1:2) Aligned. Score: 50.3497
+Sequences (1:3) Aligned. Score: 49.1841
+Sequences (1:4) Aligned. Score: 46.62
+Sequences (2:3) Aligned. Score: 78.3217
+Sequences (2:4) Aligned. Score: 61.0723
+Sequences (3:4) Aligned. Score: 55.4779
+Guide tree file created:   <a href="https://www.genome.jp/tools-bin/pushfile?211108013638ZUJtP+clustalw.dnd">[clustalw.dnd]</a>
+
+There are 3 groups
+Start of Multiple Alignment
+
+Aligning...
+Group 1: Sequences:   2      Score:7020
+Group 2: Sequences:   3      Score:5840
+Group 3: Sequences:   4      Score:5382
+Alignment Score 11821
+
+CLUSTAL-Alignment file created  <a href="https://www.genome.jp/tools-bin/pushfile?211108013638ZUJtP+clustalw.aln">[clustalw.aln]</a>
+
+<a name="clustalw.aln"></a></pre><hr><pre><a href="https://www.genome.jp/tools-bin/pushfile?211108013638ZUJtP+clustalw.aln">clustalw.aln</a><br>
+CLUSTAL 2.1 multiple sequence alignment
+
+
+ENA|CAA23748|CAA23748.1      ATGGTGCTGTCTCCTGCCGACAAGACCAACGTCAAGGCCGCCTGGGGTAA
+ENA|CAA24095|CAA24095.1      ATGGTGCTCTCTGGGGAAGACAAAAGCAACATCAAGGCTGCCTGGGGGAA
+ENA|CAA28435|CAA28435.1      ATGTCTCTGACCAGGACTGAGAGGACCATCATCCTGTCCCTGTGGAGCAA
+ENA|BAA20512|BAA20512.1      ATGAGTCTCTCTGATAAGGACAAGGCTGCTGTGAAAGCCCTATGGGCTAA
+                             ***   **  *       ** *         *     *    ***   **
+
+ENA|CAA23748|CAA23748.1      GGTCGGCGCGCACGCTGGCGAGTATGGTGCGGAGGCCCTGGAGAGGATGT
+ENA|CAA24095|CAA24095.1      GATTGGTGGCCATGGTGCTGAATATGGAGCTGAAGCCCTGGAAAGGATGT
+ENA|CAA28435|CAA28435.1      GATCTCCACACAGGCAGACGTCATTGGCACCGAGACCCTGGAGAGGCTCT
+ENA|BAA20512|BAA20512.1      GATCAGCCCCAAAGCCGATGATATCGGCGCTGAAGCTCTCGGCAGAATGC
+                             * *        * *  *  *     **  * **  * ** *  **  *  
+
+ENA|CAA23748|CAA23748.1      TCCTGTCCTTCCCCACCACCAAGACCTACTTCCCGCACTT---CGACCTG
+ENA|CAA24095|CAA24095.1      TTGCTAGCTTCCCCACCACCAAGACCTACTTTCCTCACTT---TGATGTA
+ENA|CAA28435|CAA28435.1      TCTCCTGCTACCCGCAGGCCAAGACCTACTTCCCGCACTT---CGACCTG
+ENA|BAA20512|BAA20512.1      TGACCGTCTACCCTCAGACCAAGACCTACTTCGCTCACTGGGATGACCTG
+                             *      ** ***     *************  * ****     **  * 
+
+ENA|CAA23748|CAA23748.1      AGCCACGGCTCTGCCCAAGTTAAGGGCCACGGCAAGAAGGTGGCCGACGC
+ENA|CAA24095|CAA24095.1      AGCCACGGCTCTGCCCAGGTCAAGGGTCACGGCAAGAAGGTCGCCGATGC
+ENA|CAA28435|CAA28435.1      CACTCGGGCTCCGCGCAGCTGCGCGCGCACGGCTCCAAGGTGGTGGCCGC
+ENA|BAA20512|BAA20512.1      AGCCCTGGGTCCGGTCCTGTGAAGAAGCATGGCAAGGTTATCATGGGTGC
+                               *   ** ** *  *   *       ** ***       *    *  **
+
+ENA|CAA23748|CAA23748.1      GCTGACCAACGCCGTGGCGCACGTGGACGACATGCCCAACGCGCTGTCCG
+ENA|CAA24095|CAA24095.1      GCTGGCCAGTGCTGCAGGCCACCTCGATGACCTGCCCGGTGCCTTGTCTG
+ENA|CAA28435|CAA28435.1      CGTGGGCGACGCGGTCAAGAGCATCGACAACGTGACGAGCGCGCTGTCCA
+ENA|BAA20512|BAA20512.1      AGTGGCCGATGCCGTTTCAAAAATAGACGACCTTGTGGGAGGTCTGGCCT
+                               **  *   ** *         * **  ** *       *   ** *  
+
+ENA|CAA23748|CAA23748.1      CCCTGAGCGACCTGCACGCGCACAAGCTTCGGGTGGACCCGGTCAACTTC
+ENA|CAA24095|CAA24095.1      CTCTGAGCGACCTGCATGCCCACAAGCTGCGTGTGGATCCCGTCAACTTC
+ENA|CAA28435|CAA28435.1      AGCTGAGCGAGCTGCACGCCTACGTGCTGCGCGTGGACCCGGTCAACTTC
+ENA|BAA20512|BAA20512.1      CCCTGAGCGAACTTCATGCTTCCAAGCTGCGTGTTGACCCGGCCAACTTC
+                               ******** ** ** **   *  *** ** ** ** ** * *******
+
+ENA|CAA23748|CAA23748.1      AAGCTCCTAAGCCACTGCCTGCTGGTGACCCTGGCCGCCCACCTCCCCGC
+ENA|CAA24095|CAA24095.1      AAGCTCCTGAGCCACTGCCTGCTGGTGACCTTGGCTAGCCACCACCCTGC
+ENA|CAA28435|CAA28435.1      AAGTTCCTGTCCCACTGCCTGCTGGTCACGTTGGCCTCGCACTTCCCCGC
+ENA|BAA20512|BAA20512.1      AAGATCCTCGCACACAATGTCATCGTGGTCATCGGCATGCTCTTCCCTGG
+                             *** ****    ***    *  * **     * *     * *  *** * 
+
+ENA|CAA23748|CAA23748.1      CGAGTTCACCCCTGCGGTGCACGCTTCCCTGGACAAGTTCCTGGCTTCTG
+ENA|CAA24095|CAA24095.1      CGATTTCACCCCCGCGGTACATGCCTCTCTGGACAAATTCCTTGCCTCTG
+ENA|CAA28435|CAA28435.1      CGACTTCACGGCCGACGCGCACGCCGCCTGGGACAAGTTCCTGTCCATCG
+ENA|BAA20512|BAA20512.1      AGACTTCCCCCCAGAGGTTCACATGTCAGTTGACAAGTTTTTCCAGAACT
+                              ** *** *  * *  *  **     *    ***** **  *        
+
+ENA|CAA23748|CAA23748.1      TGAGCACCGTGCTGACCTCCAAATACCGTTAA
+ENA|CAA24095|CAA24095.1      TGAGCACCGTGCTGACCTCCAAGTACCGTTAA
+ENA|CAA28435|CAA28435.1      TGTCCGGCGTCCTGACGGAGAAGTACCGCTGA
+ENA|BAA20512|BAA20512.1      TGGCTCTGGCTCTCTCTGAGAAGTACCGCTAA
+                             **      *  **  *    ** ***** * *
+<a name="clustalw.dnd"></a></pre><hr><pre><a href="https://www.genome.jp/tools-bin/pushfile?211108013638ZUJtP+clustalw.dnd">clustalw.dnd</a><br>
+(
+ENA|BAA20512|BAA20512.1:0.30944,
+(
+ENA|CAA23748|CAA23748.1:0.09149,
+ENA|CAA24095|CAA24095.1:0.12529)
+:0.08450,
+ENA|CAA28435|CAA28435.1:0.22436);
+</pre><hr size="4"><form name="tree" method="post" target="_blank" action="https://www.genome.jp/tools-bin/ete">
+<select name="treebuilder">
+<option value="bionj_default">BIONJ</option>
+<option value="fasttree_default" selected="">Select tree menu</option>
+<option value="fasttree_default">FastTree</option>
+<option value="fasttree_full">FastTree full</option>
+<option value="phyml_default">PhyML</option>
+<option value="phyml_default_bootstrap">PhyML bootstrap</option>
+<option value="raxml_default">RAxML</option>
+<option value="raxml_default_bootstrap">RAxML bootstrap</option>
+</select>
+<input type="hidden" name="ckids" value="on">
+<input type="hidden" name="prog" value="clustalw">
+<input type="hidden" name="type" value="dna">
+<input type="hidden" name="rnd" value="211108013638ZUJtP">
+<input type="hidden" name="ext" value="aln">
+<input type="submit" name="Act" value="Exec">
+</form>
+<!-- gn03 -->
+
+<div>
+    <div id="twoseven-ext-tab-media-modal" class="twoseven-ext-tab-media-modal" style="display: none;">
+      <!-- Modal content -->
+      <div class="twoseven-ext-tab-media-modal-content">
+        <div class="iframe-container" style="height: 100%; width: 100%;">
+          <span class="close">×</span>
+        </div>
+      </div>
+    </div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
