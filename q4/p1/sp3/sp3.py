@@ -1,7 +1,7 @@
 from typing import List
 from Bio import SeqIO
 
-inp_file = "../data/input.fasta"
+inp_file = "../data/beta_amylase_cereus.fasta"
 
 
 def get_inp_seqs(input_file):
@@ -19,7 +19,8 @@ def get_reverse_complement(inp_seq):
         "A": "T",
         "T": "A",
         "G": "C",
-        "C": "G"
+        "C": "G",
+        "N": ""
     }
     for nucleotide in rev_seq:
         rev_comp_seq = rev_comp_seq + comp_nuc[nucleotide]

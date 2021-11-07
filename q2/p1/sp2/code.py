@@ -21,14 +21,14 @@ def getHbondsInSequence(sequence):
     countC = 0
     countT = 0
 
-    for neuliotide in sequence:
-        if neuliotide == 'A':
+    for nucleotide in sequence:
+        if nucleotide == 'A':
             countA = countA + 1
-        if neuliotide == 'G':
+        if nucleotide == 'G':
             countG = countG + 1
-        if neuliotide == 'C':
+        if nucleotide == 'C':
             countC = countC + 1
-        if neuliotide == 'T':
+        if nucleotide == 'T':
             countT = countT + 1
 
     return (countG+countC)*3 + (countA + countT)*2
@@ -37,10 +37,10 @@ def getHbondsInSequence(sequence):
 def processFile(fileName):
     print("Processing File: " + fileName)
     sequences = getSequencesFromFastaFile(dataPath+fileName)
-    print("Found " + str(len(sequences)) + " Sequences")
+    print("Found " + str(len(sequences)) + " Sequence(s)")
     count = 1
     for sequence in sequences:
-        print("Number of H bonds in Sequence: " + str(count) +
+        print("Number of H bonds in Sequence " + str(count) +
               " is " + str(getHbondsInSequence(sequence)) + "\n")
 
 

@@ -33,12 +33,12 @@ def processFile(fileName):
         low_gc_colour = "red"
         mid_gc_colour = "lightgreen"
 
-        for i in range(0, len(sequence), 200):
+        for i in range(0, len(sequence), 100):
             gc_count = 0
-            for j in range(i, min(len(sequence), i+200)):
+            for j in range(i, min(len(sequence), i+100)):
                 if(sequence[j] == 'G' or sequence[j] == 'C'):
                     gc_count += 1
-            length_region = min(200, len(sequence)-i)
+            length_region = min(100, len(sequence)-i)
             gc_count_percent_store.append(100*(gc_count/length_region))
             if gc_count >= length_region * 0.6:
                 region_type.append(high_gc_colour)
@@ -49,8 +49,8 @@ def processFile(fileName):
 
         print(gc_count_percent_store)
 
-        plt.bar(list(range(0, len(gc_count_percent_store)*200, 200)),
-                gc_count_percent_store, color=region_type, width=200, align="edge")
+        plt.bar(list(range(0, len(gc_count_percent_store)*100, 100)),
+                gc_count_percent_store, color=region_type, width=100, align="edge")
 
         colors = {
             "high_gc_region": high_gc_colour,

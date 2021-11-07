@@ -2,21 +2,21 @@ inputfile = "dna_sequence.txt"
 f = open(inputfile, "r")
 dna_seq = f.read()
 dna_seq = dna_seq.replace("\n", "")
-print(".............DNA SEQUENCE.............\n")
+print("\n.............DNA SEQUENCE.............")
 print(dna_seq)
 
 complement = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A'}
 bases = list(dna_seq)
 bases = [complement[base] for base in bases]
 comp_seq = ''.join(bases)
-print(".............COMPLEMENTARY SEQUENCE.............\n")
+print("\n.............COMPLEMENTARY SEQUENCE.............")
 print(comp_seq)
 
 rna = {'A': 'U', 'C': 'G', 'G': 'C', 'T': 'A'}
 bases = list(comp_seq)
 bases = [rna[base] for base in bases]
 rna_seq = ''.join(bases)
-print(".............mRNA SEQUENCE.............\n")
+print("\n.............mRNA SEQUENCE.............")
 print(rna_seq)
 
 protein = {"TTT": "F", "CTT": "L", "ATT": "I", "GTT": "V",
@@ -53,7 +53,7 @@ if(start < end):
         if protein[dna_seq[i:i+3]] == "STOP":
             break
         protein_sequence += protein[dna_seq[i:i+3]]
-    print(".............PROTEIN SEQUENCE.............\n")
+    print("\n.............PROTEIN SEQUENCE.............")
     print(protein_sequence)
 else:
     print("Protein Sequence does not exist")

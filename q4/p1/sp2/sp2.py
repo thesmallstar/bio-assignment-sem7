@@ -1,7 +1,7 @@
 from Bio import SeqIO
 import os
 
-inp_file = "../data/input.fasta"
+inp_file = "../data/beta_amylase_cereus.fasta"
 
 
 def get_inp_seqs(input_file):

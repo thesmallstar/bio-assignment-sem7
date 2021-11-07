@@ -1,7 +1,9 @@
 print("Enter the amino acid sequence in single alphabet format")
+# Example protein sequence: MKNQFQYCCIVILSVVMLFVSLLIPQASSAAVNGKGMNPDYKAYLMAPLKKIPEVTNWETFENDLRWAKQH
 input_protein_sequence = str(input())
 total_amino_acids = len(input_protein_sequence)
-polar_amino_acids = {'N': [], 'D': [], 'Q': [], 'E': [], 'H': [], 'K': [], 'S': [], 'T': [], 'C': [], 'P': []}
+polar_amino_acids = {'N': [], 'D': [], 'Q': [], 'E': [],
+                     'H': [], 'K': [], 'S': [], 'T': [], 'C': [], 'P': []}
 
 for i in range(0, len(input_protein_sequence)):
     if input_protein_sequence[i] in polar_amino_acids:
@@ -17,5 +19,5 @@ print("Positions of polar amino acids:")
 for k in polar_amino_acids:
     print(k, ": ")
     for pos in polar_amino_acids[k]:
-        print(pos, end=" ")
+        print(pos+1, end=" ")
     print("\n")
