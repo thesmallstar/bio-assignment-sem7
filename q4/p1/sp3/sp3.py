@@ -20,7 +20,7 @@ def get_reverse_complement(inp_seq):
         "T": "A",
         "G": "C",
         "C": "G",
-        "N": ""
+        "N": "N"
     }
     for nucleotide in rev_seq:
         rev_comp_seq = rev_comp_seq + comp_nuc[nucleotide]
