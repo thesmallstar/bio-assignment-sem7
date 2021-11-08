@@ -19,15 +19,16 @@ dataPath = "../data/"
 
 
 def processFile(fileName):
-    print("Processing File: " + fileName)
     sequences, sequence_ids = getSequencesFromFastaFile(dataPath+fileName)
+    fileName = fileName[0:-6]
+    print("Processing File: " + fileName)
     print("Found " + str(len(sequences)) + " Sequences")
     for idx in range(0, len(sequences)):
         sequence = sequences[idx]
         sequence_id = sequence_ids[idx]
         gc_count_percent_store = []
 
-        # blue if gc_count>=60% and orange if at_count>=60% else green
+        # blue if gc_count>=60% and red if at_count>=60% else green
         region_type = []
         high_gc_colour = "royalblue"
         low_gc_colour = "red"
@@ -69,6 +70,15 @@ def processFile(fileName):
         ax.set_xlabel("Neucleotide Region range")
         ax.set_ylabel("GC Content(%)")
 
+        plt.show()
+
+        ax = plt.gca()
+        ax.set_title("Frequency Distribution over GC Content(%): " +
+                     fileName + ': ' + sequence_id)
+        ax.set_ylabel("Frequency")
+        ax.set_xlim([0, 100])
+        ax.set_xlabel("Range of GC Content(%)")
+        plt.hist(gc_count_percent_store, align="mid", color="orange")
         plt.show()
 
 
