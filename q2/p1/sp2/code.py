@@ -31,7 +31,7 @@ def getHbondsInSequence(sequence):
         if nucleotide == 'T':
             countT = countT + 1
 
-    return (countG+countC)*3 + (countA + countT)*2
+    return (countG+countC)*3 + (countA+countT)*2
 
 
 def processFile(fileName):
