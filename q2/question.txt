@@ -1,12 +1,11 @@
 Assignment 2
 
-Problem1: Download DNA sequence of insulin gene of human, rat and cow from NCBI and find out GC
-content (the fraction of letters that are a C or a G) to classify the genome into high-GC regions (on
-average 60% G or C) and Low-GC regions (on average 60% A or T). Write a program to find out
-following
+Problem1: Download DNA sequence of insulin gene of human, rat and cow from NCBI and find out GC 
+content (the fraction of letters that are a C or a G) to classify the genome into high-GC regions (on 
+average 60% G or C) and Low-GC regions (on average 60% A or T). Write a program to find out 
+following. Divide your sequence 200 bases to get GC content.
 
-1. Calculates the mean length of High-GC and Low-GC regions, and plots a histogram of the
-lengths of the High-GC and Low-GC regions.
+1. Plots a histogram of the lengths of the High-GC and Low-GC regions.
 2. Calculate number of H-bonds for each organism
 3. Find out the number of ‘GAAT’ sequence repeats in case of above gene for human
 
